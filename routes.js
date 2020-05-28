@@ -82,6 +82,7 @@ cart.delete(`${cartEndpointURI}/:id`, (request, response) => {
     if (foundIndex > -1) {
         cartItems.splice(foundIndex, 1);
         response.status(204);
+        response.send();
 
     }
 })
